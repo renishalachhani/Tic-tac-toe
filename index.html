@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <h1>Tic Tac Toe</h1>
+        <button class="menu-button" id="twoPlayersButton">2 Players</button>
+        <button class="menu-button" id="playComputerButton">Play Against Computer</button>
+        <div id="computerOptions" style="display:none;">
+            <h2>Choose your symbol:</h2>
+            <button class="menu-button" id="playerXButton">X</button>
+            <button class="menu-button" id="playerOButton">O</button>
+            <h2>Choose difficulty level:</h2>
+            <select id="difficultySelect" class="menu-select">
+                <option value="1">1 - Easy</option>
+                <option value="2">2 - Medium Easy</option>
+                <option value="3">3 - Medium</option>
+                <option value="4">4 - Medium Hard</option>
+                <option value="5">5 - Hard</option>
+            </select>
+            <button class="menu-button" id="startGameButton">Start Game</button>
+        </div>
+    </div>
+    <div class="container" id="gameContainer" style="display:none;">
+        <h1>Tic Tac Toe</h1>
+        <div class="status" id="status"></div>
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button class="game-button" id="resetButton">Reset Game</button>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div id="endMessage"></div>
+            <button class="game-button" id="newGameButton">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
